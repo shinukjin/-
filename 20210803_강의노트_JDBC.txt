@@ -1,0 +1,46 @@
+2021-08-03
+---------------------------------
+
+국가직무능력 : NCS : National Competency Standards : 
+산업현장에서 직무를 수행하기위해 요구되는 
+지식, 기술, 태도 등의 내용을 국가가 체계화한 것.
+
+
+오라클 11g 11.2.0.1.0 grid computing  여러 대의 컴퓨터를 하나의 단위로 사용하기 시작하는 시대
+메이저 버전 : ? 11g
+마이너 버전 : 2.0.1.0
+11메이저릴리즈번호
+G GRID
+2 메인터넌스 릴리즈번호
+0 어플리케이션 서버 릴리즈번호
+1 component specifir 릴리즈 번호, 패치시 이번호 증가
+0 플랫폼 릴리즈번호
+
+오라클은 
+데이터베이스 : SID 에 
+계정 : account 로 운영한다. 
+
+오라클 account 
+sys <<
+system <<
+scott <<
+>>계정단위로 움직인다.
+
+자바하고 오라클 연동할 때 는 
+1. JDBC 드라이버 가 있어야 한다. 
+C:\app\KOSMO\product\11.2.0\dbhome_1\jdbc\lib\ojdbc6.jar
+
+이클립스 202006 자바버전 에서 jdbc 드라이버 ojdbc6.jar 플러그인 하는 방법 
+1. 해당하는 패키지에서 우클릭 : javaTest
+2. Build Path 
+3. Configure Buildz Path
+4. Properties for javaTest
+5. Java Build Path 창에서 Libraries 탭 선택하기 
+6. Add External JARs.... 버튼 클릭하기 
+7. C:\app\KOSMO\product\11.2.0\dbhome_1\jdbc\lib\ojdbc6.jar 찾아가서 선택하기 
+8. Apply and Close 버튼 클릭하기 
+9. javaTest > Referenced Libaries > ojdbc6.jar 
+
+2. java.sql.*;
+
+	

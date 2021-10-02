@@ -1,0 +1,95 @@
+2021-08-17
+--------------------------------------------------------------
+
+오라클
+
+1. 관계형 데이터베이스
+ - Relation DBMS : 연결고리를 가지고 있는 테이블
+ 				 : 데이터의 무결성을 지켜줌
+				 : 테이터 공유
+				 : 데이터의 정확성과 일광성
+				 : 중복성의 제거
+				 : 표준화 가능
+				 : 불일치 제거
+2. 데이터 타입
+	
+	
+
+3. 데이터 무결성 제약조건
+	USER_CONSTRAINTS : 제약조건을 보기위한 데이터 딕셔너리 테이블 (P F C U )
+	: PRIMARY KEY(NOT NULL, UNIQUE), 테이블에서 각 ROW를 유일하게 구분하는 COLUMN KEY
+	: FOREIGH KEY
+	: CHECK OR NOT NULL : 저장 가능한 데이터 값의 범위나 조건을 지정해 설정한 값만 허용
+	: UNIQUE : 데이터가 유일해야한다.(예:사원번호 EMPNO)
+
+
+4. DUAL 테이블, DUMP함수
+	DUAL : 가상의 테이블
+	DUMP() : 데이터 타입 및 expression이 내부표현정보를 VARCHAR2형식으로 반환하는 함수.
+		값       내용
+		8       8진법
+		10      10진법
+		16      16진법
+		17      단일문자
+		1008    문자셋과 8진법
+		1010    문자셋과 10진법
+		1016    문자셋과 16진법
+		1017    문자셋과 단일문자
+	
+5. TO_DATE, TO_CHAR
+6. NVL, DECODE, CASE WHEN~
+7. COUNT, MAX, MIN, SUM, GROUP BY~ HAVING
+8. JOIN : INNERJOIN, OUTER JOIN
+9. 서브쿼리 : 스칼라 서브쿼리, 인라인 뷰 서브쿼리, 서브쿼리
+10. VIEW, SEQUENCE, INDEX 
+11. DML, DDL, TCL, DCL ?? ORACLE_기초 13쪽
+	DML : Data Manipulation Language : INSERT INTO 테이블명
+									 : UPDATE 테이블명
+									 : DELETE 테이블명
+									 >> 데이터 변경 시 사용한다.
+
+	DDL : Data Definition Language	 : CREATE TABLE 테이블명
+									 : DROP TABLE 테이블명
+									 : ALTER TABLE 테이블명 
+									 >> Object 생성과 변경 시 사용.
+	TCL : Transaction Control Language : COMMIT, ROLLBACK, SAVEPOINT : Transaction 종료 및 취소
+	DCL : Data Control Language : GRANT, REVOKE 권한 부여 및 ㅟ소
+
+12. TABLE, ROW, COULMN, PIMARY, FIELD, NULL
+
+	TABLE : 관계형 데이터베이스의 기본 데이터 저장 구조
+		  : 하나의 테이블은 여러개의 ROW로 구성
+	
+	ROW : 하나의 테이블을 구성하는 다른 유형의 데이터
+	COLUMN : 하나의 ROW를 구성하는 구성요소
+	PRIMARY : 테이블에서 각 ROW를 유일하게 구분하는 COLUMN KEY
+	FIELD : 테이블에서 ROW와 COLUMN이 교차하는 데이터
+	NULL : 데이터가 존재하지 않는 COLUMN의 값
+
+
+
+
+
+Swing 패키지 : 
+java.awt.*;
+javax.swing.*;
+
+콘솔 : MS-DOS 창 
+GUI : Graphical User Interface 
+
+컴포넌트 : GUI 도구들 : 버튼, 스크롤바 ...
+
+awt : Abstract Windows Toolkit : 윈도우에 있는 컴포넌트를 빌려다 쓴다. : 13개 컴포넌트 
+Swing : 윈도우에 있는 컴포넌트를 빌려다 쓴다 : 36개 컴포넌트 
+
+
+
+
+
+
+
+
+
+
+
+
